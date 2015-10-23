@@ -68,7 +68,7 @@ $(document).ready(function(){
   });
 });
 
-function emdl() {
+function login() {
     $("#ema").removeClass("dou");
     $("#pw").removeClass("dou");
 
@@ -92,17 +92,20 @@ function emdl() {
         $("#pw").addClass("dou");
         $("#pw").css("background-color", "#ffdfdf");
     }
-
-    if (d1==1 && d2==1) {
+//先去掉正则判断d1==1 && d2==1
+    if (1) {
         $("#pw").removeClass("dou");
         var yz = $.ajax({
             type: 'post',
-            url: '../emdl.aspx',
+            url: 'account/login',
             data: { em: em, pw: pw },
             cache: false,
             dataType: 'text',
             success: function (data) {
-                if (data == "y") {
+				 var obj=eval('('+data+')');  
+				 alert(obj.message);
+                if (obj.code == '200') {
+						
                     window.location.href = window.location;
                 } else {
                     $("#pw").addClass("dou");
@@ -116,9 +119,9 @@ function emdl() {
 }
 function myout() {
     if (n == 1) {
-        window.location.href = "../myout.aspx";
+        window.location.href = "account/logout";
     } else {
-        window.location.href = "myout.aspx";
+        window.location.href = "account/logout";
     }
     
 }

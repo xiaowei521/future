@@ -2,6 +2,8 @@
 <html>
 <head>
 <title>小伟_______demo</title>
+<meta http-equiv="Access-Control-Allow-Origin"
+	content="http://localhost:4000">
 <meta name="description" content="小伟_______demo" />
 <meta name="keywords" content="小伟_______demo" />
 <meta charset="utf-8">
@@ -14,17 +16,35 @@
 
 <link href="{$static_url}/css/my.css" rel="stylesheet" media="screen">
 <script src="{$static_url}/js/jquery.js"></script>
+
 <script src="{$static_url}/js/bootstrap.min.js"></script>
 <script>
 	var n = 0;
 </script>
 <script type="text/javascript" src="{$static_url}/js/m.js" charset="gbk"></script>
 
-
+<!-- IE8下 ，[firefox- 40.0.3]好坑的一个BUG 醉了。 已阻止跨源请求：同源策略禁止读取位于 http://localhost:4000/Public/default/fonts/glyphicons-halflings-regular.woff 的远程资源。（原因：CORS 头缺少 'Access-Control-Allow-Origin'）。 -->
+<style type="text/css">
+@font-face {
+	font-family: 'Glyphicons Halflings';
+	src: url(/Public/default/fonts/glyphicons-halflings-regular.eot);
+	src: url(/Public/default/fonts/glyphicons-halflings-regular.eot?#iefix)
+		format('embedded-opentype'),
+		url(/Public/default/fonts/glyphicons-halflings-regular.woff2)
+		format('woff2'),
+		url(/Public/default/fonts/glyphicons-halflings-regular.woff)
+		format('woff'),
+		url(/Public/default/fonts/glyphicons-halflings-regular.ttf)
+		format('truetype'),
+		url(/Public/default/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular)
+		format('svg')
+}
+</style>
 
 </head>
 
 <body data-spy="scroll" data-target=".navbar-example">
+
 	<!--nav-->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
@@ -48,6 +68,23 @@
 					<li><a href="#" data-toggle="modal" data-target="#myModal">
 							<i class="fa fa-user"></i> &nbsp;注册/登录<span class="sr-only">(current)</span>
 					</a></li>
+					<if condition="$Think.session.user_info eq true">
+					<li>
+						<div class="menu">
+							<ul style="padding-left: 0px">
+								<li><a href="javascript:void(0)"
+									style="padding-top: 4px; padding-bottom: 6px; line-height: 40px;">
+										<img src="http://www.jq22.com/tx/22.png" class="dltx" />
+								</a>
+									<ul>
+										<li><a href="/userHome" style="height: 50px">&nbsp; </a></li>
+										<li class="tpa"><a href="#" onclick="myout()">退出登录</a></li>
+									</ul>
+							</ul>
+
+						</div>
+					</li>
+					</if>
 				</ul>
 			</div>
 			<!--/.nav-collapse -->
@@ -68,6 +105,7 @@
 					<h4 class="modal-title" id="myModalLabel"></h4>
 				</div>
 				<div class="modal-body tcck">
+
 					<div class="input-group input-group-lg">
 						<span class="input-group-addon" id="email"><i
 							class="fa fa-envelope-o"></i></span> <input type="text"
@@ -80,7 +118,7 @@
 							type="password" class="form-control" placeholder="请输入登录密码"
 							aria-describedby="pwd" id="pw"> <span
 							class="input-group-btn tccBut">
-							<button class="btn btn-success" type="button" onclick="emdl()">登
+							<button class="btn btn-success" type="button" onclick="login()">登
 								录</button>
 						</span>
 					</div>

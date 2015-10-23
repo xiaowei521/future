@@ -139,145 +139,178 @@
 		<!-- /.modal -->
 	</div>
 
-<div class="container-fluid banner"></div>
-<!--nav-->
-<div
-	class="jz container-fluid nav-bg m0 visible-lg visible-md visible-sm"
-	id="menu_wrap">
-	<div class="container m0" style="position: relative;">
-		<a href="javascript:void(0)" _t_nav="n1" id="an1"><span
-			class="sort"><i class="fa glyphicon glyphicon-sunglasses"></i>
-				&nbsp;XXX <i class="fa glyphicon glyphicon-menu-down"></i></span></a>| <a
-			href="javascript:void(0)" _t_nav="n2" id="an2"><span class="sort"><i
-				class="fa glyphicon glyphicon-send"></i> &nbsp;输入 <i
-				class="fa glyphicon glyphicon-menu-down"></i></span></a>| <a
-			href="http://www.bejson.com/" target="_blank"><span class="sort">JSON在线工具</span></a>
-	</div>
-
-	<div class="container-fluid">
-		<div id="n1" class="nav-zi ty" style="display: none;" _t_nav="n1">
-			<ul class="list-inline container m0">
-				<li><a href="javascript:void(0)"><i
-						class="fa glyphicon glyphicon-send"></i> 背景</a></li>
 
 
-			</ul>
-		</div>
-		<div id="n2" class="nav-zi ty" style="display: none;" _t_nav="n2">
-			<ul class="list-inline container m0">
-				<li><a href="javascript:void(0)"><i
-						class="fa glyphicon glyphicon-send"></i> 拾色器</a></li>
-
-			</ul>
-		</div>
-	</div>
-
-</div>
-<!--end nav-->
 
 <!--主体-->
-<div class="container-fluid m" id="zt">
-	<div class="container m0 bod">
+
+<div class="container m0 bod top70" id="zt">
+	<div class="row">
+		<div class="col-md-6 t0b0 ">
+			<ol class="breadcrumb t0b0">
+				<li><a href="http://www.jq22.com">首页</a></li>
+				<li class="active">个人中心</li>
+			</ol>
+		</div>
+		<div class="col-md-6 t0b0 txtr"></div>
+	</div>
+
+	<div class="row top10 mym">
 		<!--左-->
 
-		<div class="col-lg-9 col-md-12 col-sm-12">
+		<div class="col-md-4 myleft">
+			<div class="myleft-n">
+				<h6>PROMULGATOR</h6>
+				<a href="#" data-toggle="modal" data-target="#exampleModal2"> <img
+					id="tou" src="tx/22.png" class="f imgr20">
+				</a>
+				<div class="f imgf20">
+					<h4>noob</h4>
+					<i class="fa fa-map-marker"></i>火星
+				</div>
 
-			<div class="col-lg-4 col-md-3 col-sm-4">
-				<a href="javascript:void(0)"><img src="ss"></a>
-				<div class="cover-info">
-					<a href="javascript:void(0)"><h4>jquery三环立体式图片切换效果</h4></a> <small>jquery三环立体式图片切换效果</small>
-				</div>
-				<div class="cover-fields">
-					<i class="fa fa-list-ul"></i> &nbsp; 幻灯片和轮播图,图片展示,滑块和旋转
-				</div>
-				<div class="cover-stat">
-					<i class="fa fa-eye"></i><span class="f10"> &nbsp;52</span> <i
-						class="fa fa-heart"></i></i><span class="f10"> &nbsp;0</span>
-					<div class="cover-yh">
-						<a href="mem115567" data-container="body" data-toggle="popover"
-							data-placement="top" data-content="握了颗??草 "> <i
-							class="fa fa-user-secret"></i>
-						</a>
-					</div>
-				</div>
+				<div class="df"></div>
 			</div>
+			<div class="df"></div>
+			<div class="myleft-n">
 
-
-			<div class="posts-nav-wrap">
-				<ul class="posts-nav">
-					<li class='next'><a href='index' class='next'>←</a></li>
+				<ul class="list-group">
+					<li class="list-group-item"><i class="fa fa-user-secret"></i>&nbsp;第
+						116344 位会员</li>
+					<li class="list-group-item"><span class="badge red">0</span> <i
+						class="fa fa-btc"></i>&nbsp;我的jQ币</li>
+					<li class="list-group-item"><span class="badge">0</span> <i
+						class="fa fa-heart"></i>&nbsp;关注我的人数</li>
 				</ul>
-			</div>
 
 
-		</div>
-		<!--end左-->
+				<a class="btn btn-success" href="zxzf.aspx" target="_blank"
+					style="width: 100%"><i class="fa fa-jpy"></i>购买jQ币</a> <a
+					class="btn btn-info top10" href="jquerySubmit.aspx"
+					style="width: 100%">发布资源获得jQ币</a>
 
-		<!--右-->
-
-		<div class="col-lg-2 visible-lg" style="width: 200px">
-			<ul class="list-group" style="margin-bottom: 10px">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="搜索插件.."
-						style="height: 34px; margin-top: 8px;" id="searchtxt"> <span
-						class="input-group-btn">
-						<button class="btn btn-default" type="button" id="seobut"
-							style="border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-left-width: 0px;">
-							<i class="fa glyphicon glyphicon-search"></i>
-						</button>
-					</span>
-					<script type="text/javascript">
-						$("#seobut").click(function() {
-							var seo = $("#searchtxt").val();
-							if (seo.length > 1) {
-								window.location.href = "search?seo=" + seo;
-							}
-						});
-						$('#searchtxt').bind('keypress', function(event) {
-
-							if (event.keyCode == "13") {
-								var seo = $("#searchtxt").val();
-								if (seo.length > 1) {
-									window.location.href = "search?seo=" + seo;
-								}
-							}
-						});
-					</script>
+				<div class="alert alert-warning top20" role="alert"
+					style="background-color: #fefcee; padding-top: 7px; padding-bottom: 7px">
+					<i class="fa fa-lightbulb-o"></i> 最新修复上传插件中代码内容过滤问题！<br /> <i
+						class="fa fa-lightbulb-o"></i> 签到功能完成，可以签到获得jq币！<br /> <i
+						class="fa fa-lightbulb-o"></i> 现在可以通过点击↑上方头像来修改头像了！<br />
 				</div>
-			</ul>
 
 
-			<ul class="list-group">
-				<a class="list-group-item on" href="jq1-jq1" data-para="time"><i
-					class="fa glyphicon glyphicon-transfer"></i> &nbsp;最新发布</a>
-				<a class="list-group-item" href="jq1-jq4" data-para="comments"><i
-					class="fa glyphicon glyphicon-header"></i> &nbsp;最多收藏</a>
-				<a class="list-group-item" href="jq1-jq2" data-para="comments"><i
-					class="fa glyphicon glyphicon-compressed"></i> &nbsp;最多评论</a>
-				<a class="list-group-item" href="jq1-jq3" data-para="downloads"><i
-					class="fa glyphicon glyphicon-floppy-save"></i> &nbsp;最多下载</a>
-				<a class="list-group-item" href="jq1-jq8" data-para="ie8"><i
-					class="fa glyphicon glyphicon-sound-5-1"></i> &nbsp;兼容IE8</a>
-				<a class="list-group-item" href="jq1-jq6" data-para="ie6"><i
-					class="fa glyphicon glyphicon-thumbs-up"></i> &nbsp;兼容IE6</a>
-			</ul>
+
+			</div>
+			<div class="df"></div>
 		</div>
 
-		<!--end右-->
+		<!--end 左-->
+		<!--右-->
+		<div class="col-md-8 myright">
+			<div class="myright-n">
+				<div class="myNav row">
+					<a href="mem116344"><i class="fa fa-codepen"></i> 我发布的插件</a> <a
+						href="msc116344"><i class="fa fa-heart"></i> 我收藏的插件</a> <a
+						href="#"><i class="fa fa-user"></i> 资料</a> <a href="#">账号</a> <a
+						href="#" data-toggle="modal" data-target="#exampleModal"><i
+						class="fa fa-pencil-square-o"></i> 签到</a>
+				</div>
+				<div class="row topx myMinh">
 
-
+					<div class="spjz"></div>
+				</div>
+			</div>
+		</div>
+		<!--end 右-->
 	</div>
-</div>
-
-<!--end主体-->
 
 
+	<!--end主体-->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="exampleModalLabel">
+						<i class="fa fa-pencil-square-o"></i> 签到
+					</h4>
+				</div>
+				<div class="modal-body">
+					<iframe src="signIn.aspx" width="100%" height="100%"
+						frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end主体-->
+	<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="exampleModalLabel2">
+						<i class="fa fa-picture-o"></i> 设置头像
+					</h4>
+				</div>
+				<div class="modal-body" style="height: 550px">
+					<iframe name="myFrame" src="myPhoto.aspx" width="100%"
+						height="100%" frameborder="0"></iframe>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" onclick="tx()"
+						data-dismiss="modal">保存头像</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+
+	</script>
 
 
+	<!--end底部-->
+
+	<script type="text/javascript">
+		function tx() {
+			$.ajax({
+				type : "POST",
+				url : "myPhotoSave.aspx",
+				data : "tx=" + myFrame.window.tx,
+				success : function(msg) {
+					if (msg != "n") {
+						$("#tou").attr('src', "tx/" + msg + ".png");
+					}
+				}
+			});
+
+		}
+		function clockms(id) {
+			var yz = $.ajax({
+				type : 'post',
+				url : 'mess.aspx',
+				data : {
+					id : id
+				},
+				cache : false,
+				dataType : 'text',
+				success : function(data) {
+
+				},
+				error : function() {
+				}
+			});
+		}
+	</script>
 
 
-
-
+	
 
 <!--底部-->
 

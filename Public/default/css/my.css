@@ -96,7 +96,8 @@ body { background-color: #F4F4F4; font-family: "微软雅黑"; }
 .btn-z { color: #333; background-color: #fff; border-color: #ccc; width: 100%; }
 .cjms{ color: #5E5E5E;background-color: #F9F9F9;border-color: #F0F0F0; }
 /*弹出*/
-.tcc{ height: 568px; background-image: url(../img/tcbg.png); }
+/*.tcc{ height: 568px; background-image: url(../img/tcbg.png); }*/
+.tcc{ height: 568px;  }
 .modal{ border: 0px; }
 .modal-content2 {
   position: relative;
@@ -108,6 +109,7 @@ body { background-color: #F4F4F4; font-family: "微软雅黑"; }
   outline: 0;
   -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
   box-shadow: 0 3px 9px rgba(0,0,0,.5);
+  background-color: #fff;
 }
 .modal-header2 {
   min-height: 16.43px;

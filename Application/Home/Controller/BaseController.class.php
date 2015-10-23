@@ -10,6 +10,7 @@ class BaseController extends Controller
 	{
 		//入口
 		header("Content-Type:text/html; charset=utf-8");
+		//header("Access-Control-Allow-Origin：*");
 		//检查用户是否自动登录
 		$user_info = session("user_info");
 		if (!$user_info) {
