@@ -15,7 +15,7 @@ return array(
 		
 	//网站url
 	'SITE_URL' => "http://localhost:4000",
-	'URL_MODEL' => 1,
+	'URL_MODEL' => 2,
 		
 	
 	'DB_HOST' => 'localhost',

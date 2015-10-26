@@ -120,6 +120,7 @@ function login() {
 function myout() {
     if (n == 1) {
         window.location.href = "account/logout";
+		
     } else {
         window.location.href = "account/logout";
     }

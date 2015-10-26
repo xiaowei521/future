@@ -16,4 +16,14 @@ return array(
 	//网站url
 	'SITE_URL' => "http://114.215.146.54/future/",
 	'URL_MODEL' => 1,
+		
+	
+	'DB_HOST' => '114.215.146.54',
+	'DB_PORT' => '3306',
+	'DB_USER' => 'root',
+	'DB_PWD' => 'sw547966965',
+	'DB_NAME' => 'website',
+	'DB_PREFIX' => 'xw_',
+	'DB_CHARSET' => 'utf8',
+	'DB_TYPE' => 'mysql',
 );
